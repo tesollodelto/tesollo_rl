@@ -1,5 +1,10 @@
 # TESOLLO RL
 
+![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python)
+![OS](https://img.shields.io/badge/OS-Ubuntu_22.04-E95420?style=flat-square&logo=ubuntu)
+![Isaac Lab](https://img.shields.io/badge/NVIDIA-Isaac_Lab-76B900?style=flat-square&logo=nvidia)
+
 **Learn in-hand manipulation with a TESOLLO delto hand in NVIDIA Isaac Lab.**
 
 TESOLLO RL provides a reinforcement learning example for the **DG-5F-M**. In this example, a simulated hand learns to rotate a cylindrical object while keeping it near a reference point on the hand.
