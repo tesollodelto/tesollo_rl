@@ -335,7 +335,6 @@ The reward combines positive rotation about world Z and proximity to the hand re
 
 Training adds noise to joint-position observations and randomizes the object's friction. The current reset position and velocity ranges are zero-width, so they do not provide a broad randomized reset distribution.
 
-This is a continuous-control task. A binary success-rate metric is not defined by the current task configuration. If you report performance, state how rotation speed, object retention, episode duration, and any success threshold were measured.
 
 ### Modify the example
 
@@ -383,7 +382,6 @@ tesollo_rl/
                 └── agents/rsl_rl_ppo_cfg.py
 ```
 
-The tree omits package initialization files and generated outputs for readability. Training logs are created under `logs/`; they are not required source files.
 
 ## Troubleshooting
 
@@ -399,17 +397,6 @@ The tree omits package initialization files and generated outputs for readabilit
 | No simulation window appears | Remove `--headless` and use a machine with a working graphical session. |
 | Policy export fails during playback | Check the reported export error and the ONNX/export dependencies in the Isaac Lab environment. Playback exports policy files before entering its simulation loop. |
 
-## Support
-
-Use this repository's **Issues** tab for reproducible problems with the example. Include:
-
-- The command you ran and the complete error traceback.
-- The repository commit or release tag.
-- Isaac Sim, Isaac Lab, Python, PyTorch, and RSL-RL versions.
-- Operating system, GPU model, VRAM, and NVIDIA driver version.
-- The task ID and checkpoint version, if applicable.
-
-For product specifications and hardware documentation, visit [TESOLLO](https://www.tesollo.com/).
 
 ## License and acknowledgments
 
